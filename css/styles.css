@@ -1,0 +1,140 @@
+:root {
+    --purple: #9767A9;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    scroll-behavior: smooth;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    min-width: none;
+    text-decoration: none;
+}
+
+/*HEADER*/
+header {
+    margin-top: .5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+}
+
+/*nav*/
+.header-container {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-header {
+    width: 60%;
+}
+
+.ul-header {
+    display: flex;
+    gap: 4%;
+}
+
+.ul-header li {
+    list-style: none;
+    width: max-content;
+    font-size: .8rem;
+    align-self: center;
+}
+
+.ul-header li:hover {
+    scale: 1.07;
+}
+
+/*search bar and icons*/
+.search-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.search-icons input {
+    font-size: .8rem;
+    width: 50%;
+    padding: 3px;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    background-image: url("../imgs/Layer_3.png");
+    background-repeat: no-repeat;
+    background-position: 2%;
+    text-indent: 25px;
+    color: var(--purple);
+}
+
+.search-icons input:focus {
+    text-indent: 0;
+    background-image: none;
+}
+
+.search-icons ion-icon {
+    color: var(--purple);
+    align-self: center;
+    font-size: 1.4rem;
+}
+
+/*burger menu*/
+.burger {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--purple);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.burger-line {
+    width: 70%;
+    height: 10%;
+    background-color: white;
+    align-self: center;
+    border-radius: 4px;
+}
+.pseudo {
+    background-color: white;
+}
+
+@media screen and (max-width:1000px) {
+    .search-icons {
+        display: none;
+    }
+    .links-header {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        margin-top: 0;
+    }
+    .header-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-container img {
+        margin: auto;
+    }
+    .links-header, .search-icons {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        align-self: flex-end;
+    }
+
+}
