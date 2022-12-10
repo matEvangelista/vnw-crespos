@@ -22,11 +22,12 @@ html {
 
 /*HEADER*/
 header {
-    margin-top: .5%;
+    padding: .5% 0 0.5% 0;
     display: flex;
     width: 100%;
     justify-content: center;
     position: fixed;
+    background-color: white;
 }
 
 /*nav*/
@@ -109,6 +110,62 @@ header {
     background-color: white;
 }
 
+/*MAIN*/
+/*first section - the one with the hairy dude*/
+.main-bg-image {
+    height: 78vh;
+    background-image: url("../imgs/cabeludo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    color: white;
+    width: 80%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text h1 {
+    font-size: 3rem;
+    width: 30%;
+}
+
+.text p {
+    font-size: 1.4rem;
+    width: 40%;
+}
+
+/*second main section*/
+.sete-passos {
+    background-color: var(--purple);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.sete-passos-text {
+    width: 80%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 3% 0;
+}
+
+.sete-passos-text h2 {
+    font-size: 2rem;
+    width: 50%;
+}
+
+.sete-passos-text p {
+    width: 40%;
+}
+
+
 @media screen and (max-width:1000px) {
     .search-icons {
         display: none;
@@ -119,8 +176,9 @@ header {
 }
 
 @media screen and (max-width: 850px) {
+    /*HEADER*/
     header {
-        margin-top: 0;
+        padding: 0;
     }
     .header-container {
         width: 100%;
@@ -135,6 +193,36 @@ header {
     .burger {
         display: flex;
         align-self: flex-end;
+    }
+
+    /*MAIN*/
+    /*section with the hairy dude*/
+    .main-bg-image {
+        width: 100%;
+        align-items: center;
+        background-position: 40%;
+        background-size:cover;
+    }
+    .text {
+        flex-direction: column;
+        align-items: baseline;
+        height: 35%;
+    }
+    .text h1 {
+        width: 60%;
+    }
+
+    /*sete passos section*/
+    .sete-passos-text {
+        flex-direction: column;
+        justify-content: center
+    }
+    .sete-passos-text h2, .sete-passos-text p {
+        width: 100%;
+    }
+
+    .sete-passos-text p {
+        margin-top: 5%;
     }
 
 }
