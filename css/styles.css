@@ -99,6 +99,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .burger-line {
     width: 70%;
     height: 10%;
@@ -106,6 +107,7 @@ header {
     align-self: center;
     border-radius: 4px;
 }
+
 .pseudo {
     background-color: white;
 }
@@ -122,6 +124,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .text {
     color: white;
     width: 80%;
@@ -148,6 +151,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
 .sete-passos-text {
     width: 80%;
     max-width: 1600px;
@@ -187,7 +191,7 @@ header {
 .img-h2-p {
     display: flex;
     flex-direction: column;
-    width: 47%;
+    width: 49%;
 }
 
 .img-h2-p:first-child {
@@ -220,33 +224,45 @@ header {
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) and (min-width: 851px) {
     .search-icons {
         display: none;
     }
+
     .links-header {
         width: 80%;
+    }
+
+    .img-h2-p figcaption {
+        margin-bottom: 20%;
     }
 }
 
 @media screen and (max-width: 850px) {
+
     /*HEADER*/
     header {
         padding: 0;
     }
+
     .header-container img {
         height: 3rem;
     }
+
     .header-container {
         width: 100%;
         justify-content: center;
     }
+
     .header-container img {
         margin: auto;
     }
-    .links-header, .search-icons {
+
+    .links-header,
+    .search-icons {
         display: none;
     }
+
     .burger {
         display: flex;
         align-self: flex-end;
@@ -258,13 +274,15 @@ header {
         width: 100%;
         align-items: center;
         background-position: 40%;
-        background-size:cover;
+        background-size: cover;
     }
+
     .text {
         flex-direction: column;
         align-items: baseline;
         height: 35%;
     }
+
     .text h1 {
         width: 60%;
     }
@@ -278,7 +296,9 @@ header {
         flex-direction: column;
         justify-content: center
     }
-    .sete-passos-text h2, .sete-passos-text p {
+
+    .sete-passos-text h2,
+    .sete-passos-text p {
         width: 100%;
     }
 
