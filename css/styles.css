@@ -79,11 +79,6 @@ header {
     color: var(--purple);
 }
 
-.search-icons input:focus {
-    text-indent: 0;
-    background-image: none;
-}
-
 .search-icons ion-icon {
     color: var(--purple);
     align-self: center;
@@ -311,25 +306,51 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40%;
 }
 
 .footer-icons ion-icon {
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
 }
 
 .arrows {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .arrow {
+    width: max-content;
     display: flex;
     align-items: center;
     width: fit-content;
 }
 
+.arrow:hover {
+    background-color: #e5aef9;
+}
+
+.desktop {
+    display: flex;
+    align-items: center;
+    width: min-content;
+}
+
 .mobile {
     display: none;
+}
+
+#arrow-right {
+    border-right: 2px dotted white;
+}
+
+#arrow-up {
+    border-top: 2px dotted white;
+}
+
+#arrow-left {
+    border-left: 2px dotted white;
 }
 
 
