@@ -224,6 +224,66 @@ header {
 }
 
 /*grid section with images will be here*/
+.final-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 2% 0;
+}
+
+.grid-images {
+    width: 80%;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 1.53076923fr 1fr 1fr 1.53076923fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+}
+
+.grid-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#img-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#img-6 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#img-9 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+#img-8 {
+    grid-row-start: 3;
+}
+
+#img-3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#img-10 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+#img-4 {
+    grid-row-start: 1;
+    grid-row-end:4;
+}
+
+#img-7 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
 
 /*FOOTER*/
 footer {
@@ -391,12 +451,21 @@ footer {
         align-self: center;
     }
 
-    .last-image {
+    .last-image img {
         width: 50%;
         align-self: center;
+        margin: 0;
     }
 
-    /*missing: grid section with images*/
+    /*last section in main, the one with pictures on a grid*/
+    .grid-images {
+        display: grid;
+        align-self: center;
+        width: 80%;
+        max-width: 1600px;
+    }
+
+    .grid-images {}
 
     /*FOOTER*/
     footer {
@@ -423,7 +492,8 @@ footer {
         justify-content: space-between;
     }
 
-    .social-media-icons, .arrows {
+    .social-media-icons,
+    .arrows {
         width: fit-content;
     }
 
