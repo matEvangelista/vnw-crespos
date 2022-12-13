@@ -231,8 +231,8 @@ header {
     max-width: 1600px;
     display: grid;
     grid-template-columns: 1.53076923fr 1fr 1fr 1.53076923fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1%;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.3rem;
 }
 
 .grid-images img {
@@ -480,7 +480,7 @@ footer {
 
     /*last section in main, the one with pictures on a grid*/
     .grid-images {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: 1fr 1fr 1fr 0.8fr .8fr .8fr 1fr 1fr 1fr;
     }
 
